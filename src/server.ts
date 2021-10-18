@@ -1,14 +1,12 @@
 import express from 'express';
 
 const app = express();
-require("dotenv").config();
+// require('dotenv').config();
 
 app.get('/', (request, response) => {
-    response.json({ message: "Hello App" });
+    response.json({ message: 'Hello App' });
 });
 
-app.post('/', (request, response) => {});
-
 app.listen(process.env.PORT, () => {
-    console.log("🟠 SERVER STARTED ON PORT 5002");
+    console.log('🟠 SERVER STARTED ON PORT 5002');
 });
