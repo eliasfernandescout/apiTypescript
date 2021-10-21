@@ -13,7 +13,7 @@ class CategoriesRepository implements ICategoriesRepository {
         this.categories = [];
     }
 
-    public static getIntance(): CategoriesRepository {
+    public static getInstance(): CategoriesRepository {
         if (!CategoriesRepository.INSTANCE) {
             CategoriesRepository.INSTANCE = new CategoriesRepository();
         }
