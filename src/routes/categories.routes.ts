@@ -3,7 +3,6 @@ import { v4 as uuidV4 } from 'uuid';
 
 import { Category } from '../modules/cars/model/Category';
 import { CategoriesRepository } from '../modules/cars/repositories/CategoriesRepository';
-import { PostgresCategoriesRepository } from '../modules/cars/repositories/PostgresCategoriesRepository';
 import { CreateCategoryService } from '../modules/cars/services/CreateCategoryService';
 
 const categoriesRoutes = Router();
