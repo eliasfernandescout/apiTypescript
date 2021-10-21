@@ -10,7 +10,7 @@ class SpecificationRepository implements ISpecificationsRepository {
     constructor() {
         this.specifications = [];
     }
-    create({ description, name }: ICreateSpecificationsDTO): void {
+    create({ name, description }: ICreateSpecificationsDTO): void {
         const specification = new Specification();
 
         Object.assign(specification, {
