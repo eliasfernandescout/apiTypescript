@@ -5,7 +5,7 @@ import {
 } from './ICategoriesRepository';
 
 class CategoriesRepository implements ICategoriesRepository {
-    private categories: Category[] = [];
+    private categories: Category[];
 
     constructor() {
         this.categories = [];
@@ -21,7 +21,7 @@ class CategoriesRepository implements ICategoriesRepository {
         this.categories.push(category);
     }
 
-    List(): Category[] {
+    list(): Category[] {
         return this.categories;
     }
 
