@@ -10,7 +10,7 @@ class CreateCategoryController {
 
         await this.createCategoryUseCase.execute({ name, description });
 
-        return response.status(201).json(this.createCategoryUseCase).send();
+        return response.status(201).send();
     }
 }
 

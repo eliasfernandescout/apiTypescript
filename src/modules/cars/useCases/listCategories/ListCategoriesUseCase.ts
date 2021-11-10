@@ -4,11 +4,6 @@ import { Category } from '../../entities/Category';
 import { ICategoriesRepository } from '../../repositories/ICategoriesRepository';
 import { CreateCategoryUseCase } from '../createCategory/CreateCategoryUseCase';
 
-// interface IRequest {
-//     name: string;
-//     description: string;
-// }
-
 class ListCategoriesUseCase {
     constructor(private categoriesRepository: ICategoriesRepository) {}
 
