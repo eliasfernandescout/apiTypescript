@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 
-import { Category } from '../../model/Category';
+import { Category } from '../../entities/Category';
 import { ICategoriesRepository } from '../../repositories/ICategoriesRepository';
 import { CreateCategoryUseCase } from '../createCategory/CreateCategoryUseCase';
 
