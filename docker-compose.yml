@@ -1,7 +1,7 @@
 version: "3.9"
 
 services:
-    database_apiTs:
+    database:
         image: postgres
         container_name: c_database
         restart: always
@@ -20,7 +20,7 @@ services:
         container_name: c_apiTs
         restart: always
         ports: 
-            - 3333:3333
+            - 5002:5002
         volumes: 
             - .:/usr/app
         links: 
