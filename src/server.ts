@@ -2,9 +2,8 @@ import express, { response } from 'express';
 import swaggerUi from 'swagger-ui-express';
 
 import './database';
+import './shared/container';
 import { router } from './routes';
-import { categoriesRoutes } from './routes/categories.routes';
-import { specificationsRoutes } from './routes/specifications.routes';
 import swaggerFile from './swagger.json';
 
 const app = express();
