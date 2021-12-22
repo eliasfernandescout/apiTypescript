@@ -7,7 +7,7 @@ class Category {
     id?: string;
 
     @Column()
-    name: string;
+    name?: string;
 
     @Column()
     description: string;
