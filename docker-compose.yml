@@ -3,7 +3,7 @@ version: "3.9"
 services:
     database:
         image: postgres
-        container_name: c_database
+        container_name: database-container
         restart: always
         ports:
             - 5432:5432
@@ -17,7 +17,7 @@ services:
     
     app:
         build: .
-        container_name: c_apiTs
+        container_name: rentalx-container
         restart: always
         ports: 
             - 5002:5002
