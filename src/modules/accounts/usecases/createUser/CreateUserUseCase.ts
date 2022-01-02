@@ -2,7 +2,7 @@ import { hash } from 'bcryptjs';
 import { inject, injectable } from 'tsyringe';
 import { Timestamp } from 'typeorm';
 
-import { AppError } from '../../../../errors/AppError';
+import { AppError } from '../../../../shared/errors/AppError';
 import { ICreateUsersDTO } from '../../dtos/ICreateUserDTO';
 import { IUsersRepository } from '../../repositories/IUsersRepositories';
 
